@@ -1,0 +1,29 @@
+@media (max-width: 550px) {
+    .nome-pessoa {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .query-type, .selecionar {
+        display: inline;
+        flex-direction: column;
+    }
+
+    .pessoa {
+        height: 30px;
+        margin-bottom: 20px;
+    }
+    
+    .emailaddress {
+        margin-top: 10px;
+        height: 65px;
+    }
+
+    .menssagem {
+        height: 110px;
+    }
+
+    .checkbox {
+        height: 50px;
+    }
+}

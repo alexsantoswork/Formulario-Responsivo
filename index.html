@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsivo.css">
+    <title>Formulario</title>
+</head>
+
+<body>
+
+    <main class="main">
+        <section class="section">
+            <form id="form" class="form">
+
+                <h1 class="titulo">Contact Us</h1>
+
+                <div class="nome-pessoa">
+                    <div class="pessoa form-control">
+                        <label class="nome" for="nome">Firstname *</label><br>
+                        <input id="nome" maxlength="30" class="input-firstname" type="text">
+                        <small class="error primeiro">Error Message</small>
+                    </div>
+
+                    <div class="pessoa form-control">
+                        <label class="sobrenome" for="sobrenome">Lastname *</label><br>
+                        <input id="sobrenome" maxlength="30" class="input-lastname" type="sobrenome">
+                        <small class="error">Error Message</small>
+                    </div>
+                </div>
+
+                <div class="emailaddress form-control">
+                    <label for="email">Email Address *</label><br>
+                    <input id="email" maxlength="60" class="email" type="email">
+                    <small class="error">Error Message</small>
+                </div>
+
+                <div class=" query-type form-control ">
+                    <div class="selecionar ">
+                        <label class="label-query-type">Query Type *</label>
+                        <div class="general-enquiry ">
+                            <span class="querytype-radio">
+                                <input class="input1" id="type1" name="selecionar" type="radio">
+                                <p class="general-enquiry-radio">General Enquiry</p>
+                            </span>
+                        </div>
+                    </div>
+                    <div id="aperte" class="selecionar input2 ">
+                        <div class="support-request certo ">
+                            <span class="querytype-radio">
+                                <input class="input2" id="type2" name="selecionar" type="radio">
+                                <p class="support-request-radio">Support Request</p>
+                                <small class="error-radios">Error Message</small>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="form-control menssagem">
+                    <label for="message">Message *</label><br>
+                    <textarea id="message" type="message" maxlength="300" class="message"></textarea>
+                    <small class="error">Error Message</small>
+                </div>
+
+                <div class="checkbox form-control">
+                    <input name="checked" id="checkbox" class="input-checkbox" type="checkbox">
+                    <label for="checkbox" class="contato">I hereby consent to being contacted by the team *</label>
+                    <small class="error-checkbox">Error Message</small>
+                </div>
+
+                <div class="botao">
+                    <button type="submit" class="enviar">ENVIAR</button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
